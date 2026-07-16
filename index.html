@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
+    <title>Your Name - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        header { background: #007bff; color: white; padding: 2rem; text-align: center; }
-        main { max-width: 800px; margin: 2rem auto; padding: 1rem; }
-        h1 { margin: 0; }
+        body { font-family: system-ui, sans-serif; }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Built on GitHub Pages</p>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">YourName</h1>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="services.html" class="hover:text-blue-600">Services</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-4">Hi, I'm [Your Full Name]</h2>
+            <p class="text-2xl mb-8">Designer / Developer / [Your Profession]</p>
+            <a href="#projects" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-block">
+                See My Work
+            </a>
+        </div>
     </header>
-    <main>
-        <h2>About Me</h2>
-        <p>This is a starter website. Tell me more about what you want on your site!</p>
-        
-        <h2>Next Steps</h2>
-        <ul>
-            <li>Customize this page</li>
-            <li>Add more pages</li>
-            <li>Deploy with GitHub Pages (already active!)</li>
-        </ul>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="text-lg">Write a short bio here. What do you do? What are you passionate about?</p>
+        </section>
+
+        <!-- Add more sections as needed -->
     </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
